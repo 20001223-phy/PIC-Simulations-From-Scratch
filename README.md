@@ -1,3 +1,4 @@
+
 # PIC Simulations From Scratch
 
 A collection of computational physics projects developed from scratch using Python, with a focus on Particle-in-Cell (PIC) simulations and plasma physics.
@@ -15,6 +16,9 @@ Implementation of the Cloud-in-Cell method to distribute particle charges onto a
 ### Project 02 — 1D Charge Density Calculation
 Calculation and visualization of charge density from deposited grid charges, including a charge conservation check.
 
+### Project 03 — 1D Poisson Solver
+Numerical solution of the one-dimensional Poisson equation using the finite difference method to calculate electrostatic potential from a prescribed charge-density distribution. Includes numerical verification and visualizations of charge density and potential.
+
 ## Tools and Technologies
 
 - Python
@@ -31,8 +35,9 @@ Each project focuses on one computational concept and is developed as an indepen
 
 The repository will progressively explore:
 
-- Numerical solutions of Poisson's equation
-- Electric potential and electric field calculations
-- Particle motion in self-consistent electromagnetic fields
-- Particle-in-Cell simulation techniques
-
+- Electric field calculations from electrostatic potential
+- Interpolation of grid fields to particle positions
+- Particle initialization and numerical particle pushing
+- Self-consistent electrostatic PIC simulations
+- Plasma instabilities and wave phenomena
+- Extensions toward two-dimensional and electromagnetic PIC simulations
