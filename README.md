@@ -3,21 +3,24 @@
 
 A collection of computational physics projects developed from scratch using Python, with a focus on Particle-in-Cell (PIC) simulations and plasma physics.
 
-The purpose of this repository is to build a practical understanding of numerical methods used in plasma simulations, starting with fundamental particle dynamics and gradually progressing toward more advanced computational techniques.
+This repository documents a step-by-step exploration of numerical methods used in computational plasma physics, beginning with single-particle dynamics and progressing toward grid-based field calculations and self-consistent PIC simulations.
 
 ## Projects
 
 ### Project 00 — Single Particle Motion
-Numerical simulation of a charged particle moving under a uniform electric field, using Euler and trapezoidal integration methods.
+Numerical simulation of a charged particle moving under a uniform electric field, using Euler and trapezoidal integration methods. Includes comparisons with the analytical solution and numerical error analysis.
 
 ### Project 01 — 1D Charge Deposition Using Cloud-in-Cell (CIC)
-Implementation of the Cloud-in-Cell method to distribute particle charges onto a one-dimensional computational grid.
+Implementation of the Cloud-in-Cell method to distribute particle charges onto a one-dimensional computational grid using weighted charge deposition.
 
 ### Project 02 — 1D Charge Density Calculation
 Calculation and visualization of charge density from deposited grid charges, including a charge conservation check.
 
 ### Project 03 — 1D Poisson Solver
 Numerical solution of the one-dimensional Poisson equation using the finite difference method to calculate electrostatic potential from a prescribed charge-density distribution. Includes numerical verification and visualizations of charge density and potential.
+
+### Project 04 — 1D Electric Field Calculation
+Numerical calculation of the one-dimensional electric field from a prescribed Gaussian electrostatic potential using finite difference methods. Includes comparison with the analytical electric field and numerical error analysis.
 
 ## Tools and Technologies
 
@@ -29,15 +32,17 @@ Numerical solution of the one-dimensional Poisson equation using the finite diff
 
 ## Learning Approach
 
-Each project focuses on one computational concept and is developed as an independent, executable program. Projects include their own source code, documentation, and visualizations where applicable.
+Each project focuses on an individual computational concept and is developed as an independent, executable Python program.
+
+Projects include source code, documentation, and visualizations where applicable. Numerical results are compared with analytical solutions whenever possible to evaluate the accuracy of the implemented methods.
 
 ## Future Work
 
 The repository will progressively explore:
 
-- Electric field calculations from electrostatic potential
-- Interpolation of grid fields to particle positions
+- Interpolation of grid electric fields to particle positions
 - Particle initialization and numerical particle pushing
-- Self-consistent electrostatic PIC simulations
+- Integration of charge deposition, field solving, and particle motion
+- Self-consistent one-dimensional electrostatic PIC simulations
 - Plasma instabilities and wave phenomena
 - Extensions toward two-dimensional and electromagnetic PIC simulations
