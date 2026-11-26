@@ -1,6 +1,9 @@
 
+import os
 import numpy as np
 import matplotlib.pyplot as plt
+
+os.makedirs("figures", exist_ok=True)
 
 # 1. DEFINE THE COMPUTATIONAL GRID
 x_min = 0.0
