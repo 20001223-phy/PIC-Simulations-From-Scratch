@@ -1,9 +1,8 @@
-
 # PIC Simulations From Scratch
 
 A collection of computational physics projects developed from scratch using Python, with a focus on Particle-in-Cell (PIC) simulations and plasma physics.
 
-This repository documents a step-by-step exploration of numerical methods used in computational plasma physics, beginning with single-particle dynamics and progressing toward grid-based field calculations and self-consistent PIC simulations.
+This repository documents a step-by-step exploration of numerical methods used in computational plasma physics, beginning with single-particle dynamics and progressing toward grid-based field calculations and particle-grid interactions, with the eventual goal of implementing self-consistent PIC simulations.
 
 ## Projects
 
@@ -21,6 +20,9 @@ Numerical solution of the one-dimensional Poisson equation using the finite diff
 
 ### Project 04 — 1D Electric Field Calculation
 Numerical calculation of the one-dimensional electric field from a prescribed Gaussian electrostatic potential using finite difference methods. Includes comparison with the analytical electric field and numerical error analysis.
+
+### Project 05 — Grid-to-Particle Electric Field Interpolation
+Implementation of linear interpolation to estimate the electric field at particle positions from electric field values defined on grid nodes. Includes comparison with the analytical electric field and interpolation error analysis.
 
 ## Tools and Technologies
 
@@ -40,9 +42,8 @@ Projects include source code, documentation, and visualizations where applicable
 
 The repository will progressively explore:
 
-- Interpolation of grid electric fields to particle positions
 - Particle initialization and numerical particle pushing
-- Integration of charge deposition, field solving, and particle motion
+- Integration of charge deposition, field solving, interpolation, and particle motion
 - Self-consistent one-dimensional electrostatic PIC simulations
 - Plasma instabilities and wave phenomena
 - Extensions toward two-dimensional and electromagnetic PIC simulations
